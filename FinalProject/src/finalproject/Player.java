@@ -4,7 +4,6 @@
  * Add your name as an author and the date!
  * @author Caleb Harrison
  * @date April 12, 2023
- * Time to start!
  */
 package finalproject;
 
