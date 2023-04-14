@@ -45,6 +45,11 @@ class NumberCard extends Card{
         this.value = Value.values()[value];
     }
     
+    public NumberCard(Colour colour, Value value){
+        this.colour = colour;
+        this.value = value;
+    }
+    
     public String getColour(){
         return colour.toString();
     }
@@ -76,6 +81,11 @@ class ColouredActionCard extends ActionCard{
         this.colour = Colour.values()[colour];
     }
     
+    public ColouredActionCard(Action action, Colour colour){
+        this.action = action;
+        this.colour = colour;
+    }
+    
     public String getColour(){
         return colour.toString();
     }
@@ -95,6 +105,10 @@ class WildActionCard extends ActionCard{
     
     public WildActionCard(){
         int action = (int)(Math.random() * 2) + 3;
+    }
+    
+    public WildActionCard(Action action){
+        this.action = action;
     }
     
     public String getColour(){
