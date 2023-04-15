@@ -23,7 +23,7 @@ public abstract class Card {
     public abstract String toString();
     
     protected enum Colour{
-        BLUE, GREEN, RED, YELLOW;
+        RED, YELLOW, BLUE, GREEN;
     }
     protected enum Value{
         ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE;
