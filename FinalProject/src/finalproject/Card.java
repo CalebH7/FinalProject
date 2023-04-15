@@ -37,13 +37,6 @@ public abstract class Card {
 class NumberCard extends Card{
     private final Colour colour;
     private final Value value;
-
-    public NumberCard(){
-        int colour = (int)(Math.random() * 4);
-        this.colour = Colour.values()[colour];
-        int value = (int)(Math.random() * 10);
-        this.value = Value.values()[value];
-    }
     
     public NumberCard(Colour colour, Value value){
         this.colour = colour;
@@ -74,13 +67,6 @@ abstract class ActionCard extends Card{
 class ColouredActionCard extends ActionCard{
     private Colour colour;
     
-    public ColouredActionCard(){
-        int action = (int)(Math.random() * 3);
-        this.action = Action.values()[action];
-        int colour = (int)(Math.random() * 4);
-        this.colour = Colour.values()[colour];
-    }
-    
     public ColouredActionCard(Action action, Colour colour){
         this.action = action;
         this.colour = colour;
@@ -102,10 +88,6 @@ class ColouredActionCard extends ActionCard{
 
 class WildActionCard extends ActionCard{
     private Colour colour;
-    
-    public WildActionCard(){
-        int action = (int)(Math.random() * 2) + 3;
-    }
     
     public WildActionCard(Action action){
         this.action = action;
